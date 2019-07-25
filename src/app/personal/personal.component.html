@@ -1,0 +1,32 @@
+<div>
+
+    <form [formGroup]="personalInfo" novalidate>
+
+        dentro del formulario hijo
+        <!--otro formControlName="otroControl"></otro-->
+        <div>
+            <!--select [name]="name" [(ngModel)]="value"-->
+            <select formControlName="uciCity" [(ngModel)]="texto">
+
+                            <option value="" disabled>seleccione</option>
+                            <option *ngFor="let city of cityList" [ngValue]="city.value"> 
+                                    {{city.name}}
+                            </option>
+            </select>
+            <h3>{{texto}}</h3>
+        </div>
+
+    </form>
+
+</div>
+
+
+<!--select id="uci-city" formControlName="uciCity" bdb-select-item-box >
+    <option value="" disabled> Seleccione</option>
+    <option *ngFor="let option of uciCityDataSet" [ngValue]="option.value">{{option.name}}</option>
+</select>
+<select [name]="name" [(ngModel)]="value">
+        <option *ngFor="let state of stateList" [value]="state.abbreviation"> 
+          {{state.name}}
+        </option>
+    </select-->

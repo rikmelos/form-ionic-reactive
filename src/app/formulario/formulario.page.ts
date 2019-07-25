@@ -9,6 +9,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 export class FormularioPage implements OnInit {
 
+  myText: string = '';
   updateInfoForm: FormGroup;
   constructor(private fb: FormBuilder) { }
 
