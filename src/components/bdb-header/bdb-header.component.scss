@@ -1,0 +1,26 @@
+ion-header::after {
+  background-image: none;
+
+}
+
+@mixin backcolor ($color){
+  background-color: $color;
+}
+
+.header{
+  .header__grid{
+    padding: 0;
+    .header__row{
+      height: 45px;
+      .header__col1{
+        @include backcolor( greenyellow);
+      }
+      .header__col2{
+        @include backcolor( gray);
+      }
+      .header__col3{
+        @include backcolor( greenyellow);
+      }
+    }
+  }
+}

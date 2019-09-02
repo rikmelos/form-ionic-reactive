@@ -1,0 +1,166 @@
+ion-header::after {
+  background-image: none;
+
+}
+
+@mixin backcolor ($color){
+  background-color: $color;
+}
+
+.header{
+  .header__grid{
+    padding: 0;
+    .header__row{
+      height: 45px;
+      .header__col1{
+        @include backcolor( greenyellow);
+      }
+      .header__col2{
+        @include backcolor( gray);
+      }
+      .header__col3{
+        @include backcolor( greenyellow);
+      }
+    }
+  }
+}
+
+.search{
+  padding: 0;
+  .search__cover{
+    .search__wall{
+      @include backcolor(#7044ff);
+      padding: 0;
+      height: 9.4vh
+    };
+    .search__wall--small{
+      @include backcolor(#7044ff);
+      padding: 0;
+      height: 2.3vh
+    }
+  };
+  .search__frame{
+
+    @include backcolor( pink);
+    height: 57px;
+    .search__step-one{
+      @include backcolor( green);
+    }
+    .search__one-info{
+      @include backcolor( #00FF7F);
+    }
+    .search__box{
+      @include backcolor( yellow);
+      height: 57px
+    }
+    .search__green-icon{
+      @include backcolor( black);
+      height: 57px
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.header{
+  width: 100%;
+  height: 48px;
+  @include backcolor( orange);
+  .gridHeader{
+    padding: 0;
+    display:flex;
+    justify-content: space-around;
+
+    @include backcolor( yellow);
+    .rowheader{
+      @include backcolor( red);
+      width: 100%;
+      height: 48px;
+      .col1{
+        @include backcolor( darkblue);
+
+        width: 10px;
+        height: 48px;
+      }
+      .col2{
+        @include backcolor( green);
+        width: 10px;
+        height: 48px;
+      }
+      .col3{
+        @include backcolor( black);
+        width: 10px;
+        height: 48px;
+      }
+    }
+  }
+}
+
+
+///////////////////////////////////////////////////////
+
+<ion-header class="header">
+<ion-grid class="gridHeader">
+<ion-row class="rowheader">
+<ion-col class="col1">
+</ion-col>
+<ion-col class="col2">
+</ion-col>
+<ion-col class="col3">
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-header>
+
+<br><br><br>
+
+<!-- cuerpo de los servicios-->
+<ion-content>
+<div style="padding: 0">
+<ion-grid style="padding: 0">
+
+<!-- 3 pasos y caja de busqueda-->
+<ion-row>
+<ion-col size="12" style="background: #7044ff; padding: 0; height: 11vh">
+
+</ion-col>
+</ion-row>
+
+<!-- cajas de busqueda-->
+
+<ion-row style="background: pink; height: 57px">
+<ion-col size="10.4" sizeMd="" sizeLg="" offset="0.8"  style="background: yellow; height: 57px">
+
+</ion-col>
+</ion-row>
+<ion-row style="background: pink; height: 57px">
+<ion-col size="10.4" offset="0.8" style="background: dodgerblue; height: 57px">
+
+</ion-col>
+</ion-row>
+
+<ion-row>
+<ion-col size="12" style="background: #7044ff; padding: 0; height: 2.3vh">
+
+</ion-col>
+</ion-row>
+
+</ion-grid>
+</div>
+</ion-content>
+*/

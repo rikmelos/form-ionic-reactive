@@ -1,0 +1,138 @@
+<div *ngIf="isServiceNotSelected">
+
+  <div class="wrapper-services">
+
+    <!--lado izquierdo-->
+    <div class="sidebar"></div>
+
+    <!--contenido de los servicios-->
+    <div class="content">
+
+      <!--caja servicio que deseas-->
+      <div class="box1">
+        <div class="box1__text">
+          <h1 class="box1__text-desc">Elige el servicio que deseas</h1>
+        </div>
+
+        <div class="box1__icon">
+          <i class="box1__icon-down paint"></i>
+        </div>
+
+      </div>
+
+      <!--lista de servicios-->
+      <div class="box2" *ngFor="let service of services" (click)="onClick(service);">
+        <div class="box2__icon-service">
+          <img src="../../assets/image/icono-solicitar-productos.svg">
+        </div>
+
+        <div class="box2__tittle-subtittle">
+          <div class="box2__tittle">
+            <div class="box2__tittle-selection">
+              {{service.titulo}} {{service.subtitulo}}
+            </div>
+          </div>
+
+          <div class="box2__description">
+            <div class="box2__description-selection">
+              {{service.descripcion}}
+            </div>
+          </div>
+
+        </div>
+        <!--h1 class="box2__office-address"></h1-->
+      </div>
+
+      <div *ngIf="showBanner">
+        Here is the banner! <br />
+        <div *ngIf="showBannerRequestProducts"> Products! </div>
+        <div *ngIf="showBannerDownloadApp"> Download App! </div>
+      </div>
+    </div>
+
+    <!--lado derecho-->
+    <div class="sidebar2"></div>
+  </div>
+</div>
+
+<div *ngIf="isServiceSelected">
+  <div class="wraper-selected">
+    <!--lado izquierdo-->
+    <div class="sidebar"></div>
+
+    <!--contenido con la informacion-->
+    <div class="content-info">
+
+      <!--caja adquirir productos-->
+      <div class="box-info1" (click)="onClick2()">
+          <div class="box-info1__text">
+            <h1 class="box-info1__text-desc">Adquirir productos</h1>
+          </div>
+
+          <div class="box-info1__icon">
+            <i class="box-info1__icon-down paint"></i>
+          </div>
+      </div>
+
+      <div class="box-time">
+        <div class="box-time__text">
+          <h1 class="box-time__text-desc">Serás atendido proximamente</h1>
+        </div>
+      </div>
+
+      <div class="box-gap">
+
+      </div>
+
+      <div  *ngIf="showBannerRequestProducts">
+        <div class="box-banner--item">
+          <div class="box-banner-rp-image"></div>
+          <div class="box-banner-rp-desc">
+            banner para productos
+          </div>
+          <div class="box-banner-rp-arrow"></div>
+        </div>
+      </div>
+
+      <div *ngIf="showBannerDownloadApp">
+        <div class="box-banner--item">
+          <div class="box-banner-rp-image"></div>
+          <div class="box-banner-rp-desc">
+            banner para cuenta de ahorro
+          </div>
+          <div class="box-banner-rp-arrow"></div>
+        </div>
+      </div>
+
+      <div *ngIf="showBannerRequetsDocuments">
+        <div class="box-banner--item">
+          <div class="box-banner-rp-image"></div>
+          <div class="box-banner-rp-desc">
+            banner para consignaciones
+          </div>
+          <div class="box-banner-rp-arrow"></div>
+        </div>
+      </div>
+
+      <div *ngIf="showBannerCancelProducts">
+        <div class="box-banner--cancel-product">
+          <div class="box-banner-rp-image"></div>
+          <div class="box-banner-rp-desc">
+            banner para cancelar productos
+          </div>
+        </div>
+      </div>
+
+      <div class="box-button">
+        JAJA BOTONNTO
+      </div>
+    </div>
+
+    <!--lado derecho-->
+    <div class="sidebar2"></div>
+  </div>
+</div>
+
+
+
+

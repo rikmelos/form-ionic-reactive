@@ -1,0 +1,45 @@
+@mixin backcolor ($color){
+  background-color: $color;
+}
+
+.search{
+  padding: 0;
+  background: #C9D15B;
+  .search__cover{
+    .search__wall{
+      @include backcolor(#7044ff);
+      padding: 0;
+      height: 9.4vh
+    };
+    .search__wall--small{
+      @include backcolor(#7044ff);
+      padding: 0;
+      height: 2.3vh
+    }
+  };
+
+  .search__frame{
+
+    @include backcolor( pink);
+    height: 57px;
+    .search__step-one{
+      @include backcolor( green);
+    }
+    .search__one-info{
+      @include backcolor( #00FF7F);
+    }
+    .search__box{
+      @include backcolor( yellow);
+      height: 57px
+    }
+    .search__green-icon{
+      @include backcolor( black);
+      height: 57px
+    }
+  }
+
+}
+
+ion-content {
+  --overflow: hidden;
+}

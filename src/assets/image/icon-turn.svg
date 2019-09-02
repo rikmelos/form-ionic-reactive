@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="34" viewBox="0 0 24 34">
+    <defs>
+        <path id="a" d="M16.962 0H4.038C1.81 0 0 1.73 0 3.864v26.272C0 32.27 1.81 34 4.038 34h12.924C19.19 34 21 32.27 21 30.136V3.864C21 1.73 19.19 0 16.962 0zm1.705 27.2H2.333V4.533h16.334V27.2z"/>
+        <path id="c" d="M1 0h14.127a1 1 0 0 1 1 .962c.137 3.652.206 7.164.206 10.538 0 3.272 1.153 6.385 3.459 9.338a.661.661 0 0 1-.521 1.069c-.173 0-.792-.325-1.858-.973l-1.31.973-1.653-.973-1.518.973-1.705-.973-1.808.973-1.522-.973c-.562.416-.955.678-1.178.785a.96.96 0 0 0-.277.213 1 1 0 0 1-1.192.201C1.75 20.303 0 16.758 0 11.5V1a1 1 0 0 1 1-1z"/>
+        <filter id="d" width="125.4%" height="125.5%" x="-14.5%" y="-13.3%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#FDC130" fill-rule="nonzero" xlink:href="#a"/>
+        <path fill="#6680AD" fill-rule="nonzero" d="M10.5 33c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" mask="url(#b)"/>
+        <g transform="translate(2 3)">
+            <mask id="e" fill="#fff">
+                <use xlink:href="#c"/>
+            </mask>
+            <use fill="#000" filter="url(#d)" xlink:href="#c"/>
+            <use fill="#FFF" xlink:href="#c"/>
+            <rect width="25.667" height="5.75" x="-3.5" y="-3.45" fill="#002C76" mask="url(#e)" rx="2"/>
+        </g>
+        <path fill="#002C76" fill-rule="nonzero" d="M13 18h-2.252v-6.457c0-.77-.052-.596 0-1.048-.147.11-.412.19-.626.322-.214.132-.86.418-2.08 1.125L7 10.312 11.121 8H13v10z"/>
+        <path stroke="#FDC130" stroke-width=".5" d="M6 20.5h11"/>
+    </g>
+</svg>

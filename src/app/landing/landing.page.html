@@ -1,0 +1,103 @@
+<ion-content >
+
+    <div class="container">
+        <ion-grid>
+
+            <!-- logo bdb-->
+            <ion-row class="logobdb-row-height" style="background: yellow; ">
+                <ion-col size="8" offset="2" text-center>
+                    <ion-img class="logobdb-img"[src]="image2Path" ></ion-img>
+                </ion-col>
+            </ion-row>
+
+
+            <!-- icono turnos y titulo-->
+            <ion-row class="icon-row-height" style="background: red" >
+                <ion-col size="2" sizeMd="2.5" style="background: #0cd1e8;">
+                    <!--ion-icon [src]="iconPath" style="float: right; padding-left: 3px !important; zoom: 2.4;"></ion-icon-->
+                    <ion-icon class="turn-icon" [src]="iconPath"></ion-icon>
+                </ion-col>
+                <ion-col size="7.5" sizeMd="9.5" style="background: #7044ff">
+                    <div class="turn-tittle">Tu turno virtual</div>
+                </ion-col>
+            </ion-row>
+
+            <!--descripcion de turnos-->
+            <ion-row class="description-height" style="background: pink">
+                <ion-col size="8.3" sizeMd="9" offset="1" offsetMd="1.3" style="background: lawngreen">
+                    <div class="description-paragraph" style="background: #d7d8da; ">
+                        Asiste hoy a la oficina con tu turno virtual y realiza todos tus trámites sin filas.
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <!--subtitulo como solicitarlo-->
+            <ion-row class="request-height" style="background: dodgerblue">
+                <ion-col size="8.3" sizeMd="9" offset="1" offsetMd="1.3" style="background: saddlebrown">
+                    <div class="request-subtittle-paragraphs" style="background: #d7d8da">
+                        Cómo solicitarlo:
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <!-- tres pasos-->
+            <ion-row class="three-steps-height" style="background: moccasin">
+                <!-- construccion tres pasos-->
+                <ion-col class="three-steps-position" offsetMd="1.3" offset="1" style="background: olive">
+
+                    <ion-row class="steps-position-border" style="background: yellow">
+                        <ion-col class="steps-col-position">
+                            <h1 class="ball-steps-number" >1</h1>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row class="steps-position-border" style="background: deepskyblue">
+                        <ion-col class="steps-col-position" >
+                            <h1 class="ball-steps-number">2</h1>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row class="step3-row-position" style="background: red">
+                        <ion-col class="steps-col-position" >
+                            <h1 class="ball-steps-number">3</h1>
+                        </ion-col>
+                    </ion-row>
+                </ion-col>
+
+                <!-- columnas de tres descripciones-->
+                <ion-col class="col-three-descriptions-position" size="7.8" sizeMd="8.6" style="background: red">
+                    <ion-row class="description-steps-height" style="background: yellow">
+                        <div class="request-subtittle-paragraphs">
+                            Elige la oficina con turno virtual más cercana.
+                        </div>
+                    </ion-row>
+                    <ion-row class="description-steps-height" style="background: deepskyblue">
+                        <div class="request-subtittle-paragraphs">
+                            Selecciona el servicio que deseas.
+                        </div>
+                    </ion-row>
+                    <ion-row class="description-steps-height" style="background: red">
+                        <div class="request-subtittle-paragraphs">
+                            Por último ingresa tus datos y te daremos un turno.
+                        </div>
+                    </ion-row>
+                </ion-col>
+            </ion-row>
+
+            <!--boton y imagen de mujer-->
+            <ion-row class="bottom-woman-height" style="background: gainsboro">
+                <ion-col size="6" style="background: lightgreen">
+                    <button class="button-style" (click)="goToMap()">Solicitar mi turno</button>
+                </ion-col>
+
+                <ion-col size="6" style="background: hotpink">
+                    <img class="woman" src="{{imagePath}}" />
+                </ion-col>
+
+            </ion-row>
+
+        </ion-grid>
+
+    </div>
+
+</ion-content>

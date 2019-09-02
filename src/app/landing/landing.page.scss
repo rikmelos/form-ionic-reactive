@@ -1,0 +1,180 @@
+//=====mediaquerys==========
+//====solo hasta maximo de ancho 360 px
+@media only screen and(max-width: 768px){
+  .logobdb-row-height{
+    height: 13vh;
+    //borrar
+    background: greenyellow !important;
+  }
+  .logobdb-img{
+    height: 8.7vh;
+    width: 200px;
+    margin: auto;
+    margin-top: 5px
+  }
+
+  .icon-row-height{
+    height: 8.8vh;
+    //borrar
+    background: grey !important;
+  }
+
+  .turn-icon{
+    zoom: 2;
+    position: absolute;
+    left: 50%
+  }
+
+  .turn-tittle{
+    font-family: DTLArgoT;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.29;
+    color: #0040a8;
+    max-width: 100%;
+    margin-left: 5px
+  }
+
+  .description-height{
+    height: 15.8vh
+  }
+
+  .description-paragraph{
+    font-family: OpenSans;
+    font-size: 16px;
+    line-height: 1.38;
+    color: #0040a8;
+  }
+
+  .request-height{
+    height: 37px
+  }
+
+  .request-subtittle-paragraphs{
+    font-family: OpenSans;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #666666
+  }
+
+  .three-steps-height{
+    height: 188px
+  }
+
+  .three-steps-position{
+    height: 188px;
+    flex: 0 0 0px
+  }
+
+  .steps-position-border{
+    height: 61px;
+    width: 21px;
+    margin-left: 6px;
+    border-left: 1px dashed #fdc130
+  }
+
+  .step3-row-position{
+    height: 61px;
+    width: 21px;
+    margin-left: 6px
+  }
+
+  .steps-col-position{
+    height: 22px;
+    margin-left: -9px;
+    margin-top: 0px;
+    border-radius: 25px !important;
+    background: #0040a8;
+  }
+
+  .ball-steps-number{
+    height: 26px;
+    margin-left: 2px;
+    margin-top: -1px;
+    font-size: 12px;
+    font-family: OpenSans;
+    color: #ffffff;
+  }
+
+  .col-three-descriptions-position{
+    height: 188px;
+    width: 4vw;
+    margin-left: -5px
+  }
+
+  .description-steps-height{
+    height: 61px;
+  }
+
+  .bottom-woman-height{
+    height: 164px
+  }
+
+  .button-style{
+    position:absolute;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, #0074d3, #0040a8);
+    width: 177px;
+    height: 48px;
+    border-radius: 24px;
+    left: 26vw;
+    margin-top: 14vh;
+    font-family: DTLArgoT;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff
+  }
+
+  .woman{
+    height: 29vh;
+    width: 57.7vw;
+    position: absolute;
+    bottom: 0;
+    right: 3vh
+  }
+}
+
+//===dispositivos medianos
+@media only screen and(min-width: 768px) and(max-width: 992px){
+  .logobdb-row-height{
+    height: 13vh;
+    //borrar
+    background: greenyellow !important;
+  }
+
+  .logobdb-img{
+    height: 10.7vh;
+    width: 290px;
+    margin: auto;
+    margin-top: 5px
+  }
+
+  .turn-icon{
+    zoom: 2.8;
+    position: absolute;
+    left: 50%
+  }
+
+  .turn-tittle{
+    font-family: DTLArgoT;
+    font-size: 36px;
+    line-height: 1;
+    margin-left: -34px;
+    margin-top: 11px;
+    font-weight: bold;
+    color: #0040a8;
+    max-width: 100%;
+  }
+
+}
+
+/*
+https://jsfiddle.net/Dwaaren/j9zahaLL/
+https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp
+
+
+https://stackoverflow.com/questions/2570877/how-do-i-stick-an-image-to-the-bottom-of-the-visible-screen-and-be-centered
+https://stackoverflow.com/questions/54175400/how-to-use-height-webkit-fill-available-in-edge-browser-how-to-make-a-div-fil
+https://stackoverflow.com/questions/51262607/max-width-marked-as-invalid-property-value/51262834
+https://forum.ionicframework.com/t/how-to-set-an-ionic-layout-grid-column-width-to-a-fixed-size/79701/3
+ */

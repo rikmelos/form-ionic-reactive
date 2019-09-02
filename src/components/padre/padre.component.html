@@ -1,0 +1,10 @@
+<div style="background: #00FF7F">
+  padre works!
+  hola hijo mio te llamaras ->
+
+  <div style="background: orangered" *ngFor="let nombre of nombres" (click)="enviarNombre(nombre)">
+    <div style="background: pink">{{nombre}}</div>
+  </div>
+
+  <app-hijo [hijoName]="mijo"></app-hijo>
+</div>
