@@ -8,6 +8,8 @@ import { IonicModule } from '@ionic/angular';
 import { TalkParentChildPage } from './talk-parent-child.page';
 import {PadreComponent} from '../../components/padre/padre.component';
 import {HijoComponent} from '../../components/hijo/hijo.component';
+import { FileOpener } from '@ionic-native/file-opener/ngx';
+
 
 const routes: Routes = [
   {

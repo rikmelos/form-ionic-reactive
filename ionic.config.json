@@ -1,5 +1,7 @@
 {
   "name": "form-proyect",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

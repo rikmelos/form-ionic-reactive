@@ -8,6 +8,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FileOpener } from '@ionic-native/file-opener/ngx';
+import { File } from '@ionic-native/file/ngx';
+
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
 
@@ -19,6 +22,8 @@ import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
   providers: [
     StatusBar,
     SplashScreen,
+    FileOpener,
+    File,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
