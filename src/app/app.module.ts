@@ -16,7 +16,7 @@ import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
@@ -24,7 +24,9 @@ import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
     SplashScreen,
     FileOpener,
     File,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    {provide: RouteReuseStrategy, useClass: IonicRouteStrategy}
+  ],
+  exports: [
   ],
   bootstrap: [AppComponent]
 })

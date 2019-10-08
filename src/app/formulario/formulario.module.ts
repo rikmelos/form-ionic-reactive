@@ -10,6 +10,7 @@ import { FormularioPage } from './formulario.page';
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import {ReactiveFormsModule} from '@angular/forms';
 import { PersonalComponent } from '../personal/personal.component';
+import {FilterPipe} from '../personal/filter.pipe';
 
 
 const routes: Routes = [
@@ -20,13 +21,13 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild(routes),
-    ReactiveFormsModule
-  ],
-  declarations: [FormularioPage, PersonalComponent]
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        RouterModule.forChild(routes),
+        ReactiveFormsModule,
+    ],
+    declarations: [FormularioPage, PersonalComponent, FilterPipe]
 })
 export class FormularioPageModule {}

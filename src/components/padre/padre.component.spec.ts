@@ -21,7 +21,17 @@ describe('PadreComponent', () => {
     fixture.detectChanges();
   });
 
+  afterEach(() => {
+    component = null;
+  });
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
+  it('should cover mijo variable', () => {
+    expect(component.mijo).toEqual('mijin');
+  });
+
 });

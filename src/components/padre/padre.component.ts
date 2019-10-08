@@ -7,14 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PadreComponent implements OnInit {
 
-  mijo: any = '';
+  mijo: any = 'mijin';
   nombres = ['carlitos', 'andresito', 'miguelito'];
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
-  enviarNombre(nombre) {
+  enviarNombre(nombre): void {
     this.mijo = nombre;
   }
 

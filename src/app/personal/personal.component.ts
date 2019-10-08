@@ -1,7 +1,8 @@
 import { Component, OnInit, Input, forwardRef} from '@angular/core';
 import {ReactiveFormsModule, FormBuilder, FormGroup, ControlValueAccessor, Validators, NG_VALUE_ACCESSOR} from '@angular/forms';
-import { City, cities } from './uciCityDataSet';
+import { ICity, cities } from './uciCityDataSet';
 import { ModelPerson } from './model';
+
 
 @Component({
   selector: 'app-personal',
@@ -24,7 +25,10 @@ export class PersonalComponent implements ControlValueAccessor, OnInit {
   
   personalInfo: FormGroup;
 
-  cityList: City[] = cities;
+  // filter : stateIdSearch
+
+  stateIdSearch = '13';
+  cityList: ICity[] = cities.filter( citie => citie.stateId.includes(this.stateIdSearch));
   personalModel: ModelPerson;
 
 

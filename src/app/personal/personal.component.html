@@ -9,7 +9,7 @@
             <select formControlName="uciCity" [(ngModel)]="texto">
 
                             <option value="" disabled>seleccione</option>
-                            <option *ngFor="let city of cityList" [ngValue]="city.value"> 
+                            <option *ngFor="let city of cityList | filter" [ngValue]="city.value">
                                     {{city.name}}
                             </option>
             </select>

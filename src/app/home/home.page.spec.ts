@@ -24,4 +24,10 @@ describe('HomePage', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should add two numbers', () => {
+    expect(component.sumar(2, 7)).toEqual(9);
+  });
+
+
 });
